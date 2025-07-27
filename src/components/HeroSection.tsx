@@ -15,7 +15,7 @@ export default function HeroSection() {
 
   return (
     <EnhancedSection
-      className="relative overflow-hidden bg-black min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 pt-8 pb-0 lg:pt-60"
+      className="relative overflow-hidden bg-black min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 pt-4 pb-0 lg:pt-60"
       data-aos-delay="200"
       data-aos-duration="1200"
     >
