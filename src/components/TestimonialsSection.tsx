@@ -21,7 +21,7 @@ export default function TestimonialsSection() {
       {/* Main Testimonial */}
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 mb-20">
         <img
-          src="src/assets/zapfast.jpeg"
+          src="/zapfast.jpeg"
           alt="Zapfast"
           className="w-full sm:w-[80%] md:w-[400px] h-[250px] sm:h-[300px] object-cover rounded-2xl shadow-lg mx-auto"
         />
