@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import InnovationIcon from "../assets/card1.jpeg";
-import ExperienceIcon from "../assets/card2.jpeg";
-import PartnershipIcon from "../assets/card3.jpeg";
+import InnovationIcon from "/card1.jpeg";
+import ExperienceIcon from "/card2.jpeg";
+import PartnershipIcon from "/card3.jpeg";
 
 const textVariants = {
   hidden: { opacity: 0, y: 30 },

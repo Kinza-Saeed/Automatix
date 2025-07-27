@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import team1 from "../assets/team1.jpeg";
-import team2 from "../assets/team2.jpeg";
-import team3 from "../assets/team3.jpeg";
-import team4 from "../assets/team4.jpeg";
+import team1 from "/team1.jpeg";
+import team2 from "/team2.jpeg";
+import team3 from "/team3.jpeg";
+import team4 from "/team4.jpeg";
 
 const teamMembers = [
   {

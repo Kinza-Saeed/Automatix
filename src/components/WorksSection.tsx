@@ -8,19 +8,19 @@ const workItems = [
     title: "Grapho AI",
     description:
       "That’s Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
-    image: "/src/assets/work1.jpeg",
+    image: "/work1.jpeg",
   },
   {
     title: "VectraOps",
     description:
       "That’s Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
-    image: "/src/assets/work2.jpeg",
+    image: "/work2.jpeg",
   },
   {
     title: "Signum",
     description:
       "That’s Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
-    image: "/src/assets/work3.jpeg",
+    image: "/work3.jpeg",
   },
 ];
 

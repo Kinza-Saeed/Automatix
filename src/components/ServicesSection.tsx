@@ -110,7 +110,7 @@ const ServicesSection = () => {
             </h3>
             <motion.img
               alt="service"
-              src={`src/assets/service${idx + 1}.jpeg`}
+              src={`/service${idx + 1}.jpeg`}
               className="rounded-xl mb-5 w-full h-44 sm:h-52 object-cover transition-transform duration-500 group-hover:scale-105"
               variants={imageVariants}
               initial="hidden"
