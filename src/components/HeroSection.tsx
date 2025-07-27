@@ -30,11 +30,11 @@ export default function HeroSection() {
         md:pt-44 md:pb-20 
         lg:pt-52 lg:pb-16"
       >
-        {/* Dotted Background with Gradient Fades */}
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          {/* Dotted Background */}
-          <div
-            className="
+       {/* Dotted Background with Gradient Fades */}
+<div className="absolute inset-0 z-0 pointer-events-none">
+  {/* Dotted Background */}
+  <div
+    className="
       relative
       pt-36
       sm:pt-48
@@ -43,39 +43,42 @@ export default function HeroSection() {
       sm:h-[560px]
       lg:h-[680px]
       w-full
-      bg-[radial-gradient(#e87811_1px,transparent_1px)]
-      [background-size:10px_10px]
       opacity-30
       transition-all
       duration-300
       overflow-hidden
     "
-          >
-            {/* Top Fades */}
-            <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10" />
-            <div className="absolute top-0 left-1/4 w-1/6 h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-60" />
-            <div className="absolute top-0 left-1/2 w-1/5 h-40 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-70" />
-            <div className="absolute top-0 right-1/6 w-1/6 h-24 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-50" />
+  >
+    {/* White Dots Layer */}
+    <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:10px_10px] mix-blend-screen" />
+    
+    {/* Orange Dots Layer */}
+    <div className="absolute inset-0 bg-[radial-gradient(#e87811_1px,transparent_1px)] [background-size:10px_10px] mix-blend-screen opacity-80" />
 
-            {/* Bottom Fades */}
-            <div className="absolute bottom-0 left-0 w-full h-52 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10" />
-            <div className="absolute bottom-0 left-[15%] w-1/6 h-40 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-60" />
-            <div className="absolute bottom-0 left-1/2 w-1/4 h-48 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-80" />
-            <div className="absolute bottom-0 right-[10%] w-1/6 h-32 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-50" />
+    {/* Top Fades */}
+    <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10" />
+    <div className="absolute top-0 left-1/4 w-1/6 h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-60" />
+    <div className="absolute top-0 left-1/2 w-1/5 h-40 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-70" />
+    <div className="absolute top-0 right-1/6 w-1/6 h-24 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-50" />
 
-            {/* Side Fades */}
-            {/* Side Fades - Wider and Stronger */}
-            <div className="absolute top-0 left-0 h-full w-36 bg-gradient-to-r from-[#0e0e0e] to-transparent z-10" />
-            <div className="absolute top-0 right-0 h-full w-36 bg-gradient-to-l from-[#0e0e0e] to-transparent z-10" />
+    {/* Bottom Fades */}
+    <div className="absolute bottom-0 left-0 w-full h-52 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10" />
+    <div className="absolute bottom-0 left-[15%] w-1/6 h-40 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-60" />
+    <div className="absolute bottom-0 left-1/2 w-1/4 h-48 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-80" />
+    <div className="absolute bottom-0 right-[10%] w-1/6 h-32 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-50" />
 
-            {/* Rounded Fade Below Navbar */}
-            <div
-              className="absolute top-20 left-1/2 transform -translate-x-1/2 w-[80vw] h-24 
-             bg-[radial-gradient(ellipse_at_center,_#0e0e0e_40%,_transparent_100%)]
-             blur-xl opacity-80 z-10 pointer-events-none"
-            />
-          </div>
-        </div>
+    {/* Side Fades */}
+    <div className="absolute top-0 left-0 h-full w-36 bg-gradient-to-r from-[#0e0e0e] to-transparent z-10" />
+    <div className="absolute top-0 right-0 h-full w-36 bg-gradient-to-l from-[#0e0e0e] to-transparent z-10" />
+
+    {/* Rounded Fade Below Navbar */}
+    <div
+      className="absolute top-20 left-1/2 transform -translate-x-1/2 w-[80vw] h-24 
+        bg-[radial-gradient(ellipse_at_center,_#0e0e0e_40%,_transparent_100%)]
+        blur-xl opacity-80 z-10 pointer-events-none"
+    />
+  </div>
+</div>
 
         {/* Hero Content */}
         <div
@@ -103,10 +106,10 @@ export default function HeroSection() {
             data-aos-delay="200"
           >
             <span className="text-[#E87811] block">Automation Agency</span>
-            <span className="text-white block mt-1 sm:mt-2">
+            <span className="text-white block mt-1 sm:mt-2 lg:mt-4 xl:mt-6">
               Beyond <span className="text-white">✦</span> Limits.
             </span>
-            <span className="text-[#E87811] block mt-1 sm:mt-2">
+            <span className="text-[#E87811] block mt-1 sm:mt-2 lg:mt-4 xl:mt-6">
               Amplified With AI.
             </span>
           </h1>

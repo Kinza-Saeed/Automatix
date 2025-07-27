@@ -103,7 +103,7 @@ const Navbar = () => {
         )}
       >
         <div className="w-full max-w-5xl px-6 pt-3">
-          <div className="flex items-center justify-between bg-[#0A0A0A]/70 backdrop-blur-lg text-white rounded-full px-6 py-3 border border-[#2a2a2a] shadow-lg">
+          <div className="flex items-center justify-between bg-[#0A0A0A]/70 backdrop-blur-lg text-white rounded-full px-[46px] py-[13px] border border-[#2a2a2a] shadow-lg">
             {/* Logo */}
             <Link
               to="/"
