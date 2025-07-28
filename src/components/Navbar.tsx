@@ -26,26 +26,34 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Mobile Fullscreen Dropdown Menu */}
-      {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-[#121214] px-6 py-24 flex flex-col items-center justify-start space-y-6 text-white text-lg font-medium transition-all duration-300">
-          <a href="#whyus" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Why Us</a>
-          <a href="#mission" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Mission</a>
-          <a href="#works" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Works</a>
-          <a href="#services" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Services</a>
-          <Link to="/contact" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Contact</Link>
-          <Link to="/terms" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Term & Conditions</Link>
-          <Link to="/404" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>404 Page</Link>
-          <Link
-            to="/contact"
-            onClick={() => setMenuOpen(false)}
-            className="w-full mt-8 inline-flex justify-center items-center gap-2 px-6 py-3 text-lg font-medium text-white bg-[#0E0E10] border border-white/10 transition-all overflow-hidden rounded-xl"
-          >
-            Let’s Talk
-            <ArrowUpRight size={18} />
-          </Link>
-        </div>
-      )}
+{/* Mobile Fullscreen Dropdown Menu */}
+{menuOpen && (
+  <div className="fixed inset-0 z-40 bg-[#121214] px-4 py-6 flex items-start justify-center transition-all duration-300">
+    <div className="w-full max-w-[90%] bg-[#181818] border border-white/10 rounded-2xl py-8 px-6 flex flex-col items-center gap-6 text-white text-lg font-medium shadow-xl mt-[64px]">
+      <a href="#whyus" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Why Us</a>
+      <a href="#mission" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Mission</a>
+      <a href="#works" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Works</a>
+      <a href="#services" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Services</a>
+      <Link to="/contact" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Contact</Link>
+      <Link to="/terms" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>Term & Conditions</Link>
+      <Link to="/404" className="hover:text-orange-400 transition" onClick={() => setMenuOpen(false)}>404 Page</Link>
+
+      <Link
+  to="/contact"
+  onClick={() => setMenuOpen(false)}
+  className="mt-6 w-full relative inline-flex justify-center items-center gap-2 px-6 py-3 text-base font-medium text-white bg-[#0E0E10] border border-white/10 rounded-xl transition overflow-hidden animate-border-glow"
+>
+  <span className="absolute inset-0 z-0 rounded-xl bg-[radial-gradient(circle_at_top_left,_rgba(255,115,51,0.1)_0%,_transparent_100%)] pointer-events-none" />
+  <span className="relative z-10 flex items-center gap-2">
+    Let’s Talk
+    <ArrowUpRight size={18} />
+  </span>
+</Link>
+
+    </div>
+  </div>
+)}
+
 
       {/* Main Navbar */}
       <nav
@@ -88,19 +96,20 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* CTA Button (Desktop Only) */}
-            <Link to="/contact" className="hidden md:block relative group">
-              <span className="relative inline-flex items-center gap-2 px-6 py-2 rounded-md text-lg font-medium text-white bg-[#0E0E10] border border-white/10 transition-all overflow-hidden z-10">
-                <span className="absolute inset-0 z-0 rounded-full bg-[radial-gradient(circle_at_top_left,_rgba(255,115,51,0.2)_0%,_transparent_100%)]" />
-                <span className="absolute inset-0 border border-transparent group-hover:border-orange-400 transition-all z-0" />
-                <span className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] to-[#111] opacity-90 z-0" />
-                <span className="relative z-10 flex items-center gap-2 pr-5">
-                  Let’s Talk
-                  <ArrowUpRight className="transition-transform duration-300 group-hover:-rotate-45" size={16} />
-                </span>
-              </span>
-              <span className="absolute inset-0 rounded-full pointer-events-none group-hover:animate-border-glow border border-orange-500/20" />
-            </Link>
+     <Link to="/contact" className="hidden md:block relative group">
+  <span className="relative inline-flex items-center gap-2 px-6 py-2 rounded-md text-lg font-medium text-white bg-[#0E0E10] border border-white/10 transition-all overflow-hidden z-10">
+    <span className="absolute inset-0 z-0 rounded-full bg-[radial-gradient(circle_at_top_left,_rgba(255,115,51,0.2)_0%,_transparent_100%)]" />
+    <span className="absolute inset-0 border border-orange-400 transition-all z-0" />
+    <span className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] to-[#111] opacity-90 z-0" />
+    <span className="relative z-10 flex items-center gap-2 pr-5">
+      Let’s Talk
+      <ArrowUpRight className="transition-transform duration-300 group-hover:-rotate-45" size={16} />
+    </span>
+  </span>
+  <span className="absolute inset-0 rounded-full pointer-events-none animate-border-glow border border-orange-500/20" />
+</Link>
+
+
 
             {/* Mobile Menu Icon */}
             <div className="md:hidden z-50 relative">

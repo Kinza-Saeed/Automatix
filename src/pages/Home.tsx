@@ -1,6 +1,5 @@
 
 import HeroSection from "../components/HeroSection";
-import TrustedBy from "../components/TrustedBy";
 import WhyUs from "../components/WhyUs";
 import OurMission from "../components/OurMission";
 import WorksSection from "../components/WorksSection";
@@ -16,7 +15,6 @@ const Home = () => {
     <>
     <div className="bg-black text-white">
       <HeroSection />
-      <TrustedBy />
       <WhyUs />
       <OurMission />
       <WorksSection />

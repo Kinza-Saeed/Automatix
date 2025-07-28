@@ -10,7 +10,7 @@ export default function BottomSection() {
     >
       {/* Dotted Background */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-[radial-gradient(#e87811_1px,transparent_1px)] [background-size:15px_15px] opacity-30" />
+        <div className="w-full h-full bg-[radial-gradient(#e87811_1px,transparent_1px)] [background-size:10px_10px] opacity-25" />
       </div>
 
       <div className="relative z-10 max-w-screen-lg mx-auto">
