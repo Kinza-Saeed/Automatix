@@ -71,27 +71,28 @@ export default function HeroSection() {
 
           {/* Heading */}
           <h1
-  className="text-[2rem] xs:text-[2.3rem] sm:text-5xl md:text-6xl lg:text-8xl xl:text-7xl 
-    font-bold leading-tight font-satoshi 
+  className="text-[2rem] xs:text-[2.3rem] sm:text-5xl md:text-6xl lg:text-9xl xl:text-7xl 
+    font-medium leading-tight font-satoshi 
     space-y-3 
     mt-2 sm:mt-4 md:mt-6"
   data-aos="fade-up"
   data-aos-delay="200"
 >
   <span className="text-[#E87811] block pt-2 sm:pt-4">Automation Agency</span>
-  <span className="text-white block mt-2 sm:mt-4">Beyond <span className="text-white">✦</span> Limits.</span>
-  <span className="text-[#E87811] block mt-2 sm:mt-4">Amplified With AI.</span>
+  <span className="text-white block mt-6 sm:mt-4">Beyond <span className="text-white">✦</span> Limits.</span>
+  <span className="text-[#E87811] block mt-6 sm:mt-4">Amplified With AI.</span>
 </h1>
 
 
-          {/* Subtext */}
-          <p
-            className="text-sm xs:text-base sm:text-lg text-[#AFAFAF] mt-6 font-manrope px-2 sm:px-6 md:px-12"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            Design services at your fingertips. Pause or cancel anytime.
-          </p>
+         <p
+  className="text-sm xs:text-base sm:text-lg text-[#AFAFAF] mt-6 font-manrope px-2 sm:px-6 md:px-12 text-center"
+  data-aos="fade-up"
+  data-aos-delay="400"
+>
+  Design services at your fingertips <br className="sm:hidden" />
+  Pause or cancel anytime.
+</p>
+
 
           {/* CTA Button */}
           <AnimatedButton>
