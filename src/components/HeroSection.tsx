@@ -23,36 +23,61 @@ export default function HeroSection() {
 
   return (
     <>
-    <EnhancedSection
-  className="relative z-10 w-full max-w-7xl mx-auto 
-    px-4 pt-32 pb-8 
-    sm:pt-40 sm:pb-16 
-    md:pt-44 md:pb-20 
-    lg:pt-52 lg:pb-16"
->
-
-      
-{/* Dotted Background */}
-<div className="absolute inset-0 z-0 pointer-events-none">
-  {/* Dotted Grid */}
-  <div
-    className="
-      h-[600px] w-full
+      <EnhancedSection
+        className="relative z-10 w-full max-w-7xl mx-auto 
+        px-4 pt-32 pb-8 
+        sm:pt-40 sm:pb-16 
+        md:pt-44 md:pb-20 
+        lg:pt-52 lg:pb-16"
+      >
+        {/* Dotted Background with Gradient Fades */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          {/* Dotted Background */}
+          <div
+            className="
+      relative
+      pt-36
+      sm:pt-48
+      lg:pt-56
+      h-[480px]
+      sm:h-[560px]
+      lg:h-[680px]
+      w-full
       bg-[radial-gradient(#e87811_1px,transparent_1px)]
       [background-size:10px_10px]
       opacity-30
+      transition-all
+      duration-300
+      overflow-hidden
     "
-  />
+          >
+            {/* Top Fades */}
+            <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10" />
+            <div className="absolute top-0 left-1/4 w-1/6 h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-60" />
+            <div className="absolute top-0 left-1/2 w-1/5 h-40 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-70" />
+            <div className="absolute top-0 right-1/6 w-1/6 h-24 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-50" />
 
-  {/* Top Fade Gradient */}
-  <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#0B0B0B] to-transparent z-10" />
+            {/* Bottom Fades */}
+            <div className="absolute bottom-0 left-0 w-full h-52 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10" />
+            <div className="absolute bottom-0 left-[15%] w-1/6 h-40 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-60" />
+            <div className="absolute bottom-0 left-1/2 w-1/4 h-48 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-80" />
+            <div className="absolute bottom-0 right-[10%] w-1/6 h-32 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-50" />
 
-  {/* Bottom Fade Gradient */}
-  <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#0B0B0B] to-transparent z-10" />
-</div>
+            {/* Side Fades */}
+            {/* Side Fades - Wider and Stronger */}
+            <div className="absolute top-0 left-0 h-full w-36 bg-gradient-to-r from-[#0e0e0e] to-transparent z-10" />
+            <div className="absolute top-0 right-0 h-full w-36 bg-gradient-to-l from-[#0e0e0e] to-transparent z-10" />
 
+            {/* Rounded Fade Below Navbar */}
+            <div
+              className="absolute top-20 left-1/2 transform -translate-x-1/2 w-[80vw] h-24 
+             bg-[radial-gradient(ellipse_at_center,_#0e0e0e_40%,_transparent_100%)]
+             blur-xl opacity-80 z-10 pointer-events-none"
+            />
+          </div>
+        </div>
 
- {/* Hero Content */}
+        {/* Hero Content */}
         <div
           className="relative z-10 text-center max-w-2xl sm:max-w-4xl w-full mx-auto flex flex-col items-center justify-center"
           data-aos="fade-up"
@@ -70,29 +95,31 @@ export default function HeroSection() {
           </div>
 
           {/* Heading */}
-  <h1
-  className="text-[2rem] xs:text-[2.3rem] sm:text-5xl md:text-6xl lg:text-9xl xl:text-7xl 
-    font-medium leading-[1.05] font-satoshi 
-    mt-1 sm:mt-4 md:mt-6"
-  data-aos="fade-up"
-  data-aos-delay="200"
->
-  <span className="text-[#E87811] block">Automation Agency</span>
-  <span className="text-white block mt-1 sm:mt-2">Beyond <span className="text-white">✦</span> Limits.</span>
-  <span className="text-[#E87811] block mt-1 sm:mt-2">Amplified With AI.</span>
-</h1>
+          <h1
+            className="text-[2rem] xs:text-[2.3rem] sm:text-5xl md:text-6xl lg:text-9xl xl:text-7xl 
+              font-medium leading-[1.05] font-satoshi 
+              mt-1 sm:mt-4 md:mt-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <span className="text-[#E87811] block">Automation Agency</span>
+            <span className="text-white block mt-1 sm:mt-2">
+              Beyond <span className="text-white">✦</span> Limits.
+            </span>
+            <span className="text-[#E87811] block mt-1 sm:mt-2">
+              Amplified With AI.
+            </span>
+          </h1>
 
-
-
-   <p
-  className="text-sm xs:text-base sm:text-lg text-[#AFAFAF] mt-6 font-manrope px-2 sm:px-6 md:px-12 text-center"
-  data-aos="fade-up"
-  data-aos-delay="400"
->
-  Design services at your fingertips. <br className="sm:hidden" />
-  Pause or cancel anytime.
-</p>
-
+          {/* Subtext */}
+          <p
+            className="text-sm xs:text-base sm:text-lg text-[#AFAFAF] mt-6 font-manrope px-2 sm:px-6 md:px-12 text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            Design services at your fingertips. <br className="sm:hidden" />
+            Pause or cancel anytime.
+          </p>
 
           {/* CTA Button */}
           <AnimatedButton>
@@ -118,7 +145,7 @@ export default function HeroSection() {
         </div>
       </EnhancedSection>
 
-  {/* Trusted By Section OUTSIDE Dotted Background */}
+      {/* Trusted By Section */}
       <div className="relative z-20 w-full bg-black/5 pt-10 pb-6 sm:py-16">
         <div className="font-inter text-[12px] leading-normal tracking-normal max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-sm text-gray-400 mb-6 sm:mb-8">

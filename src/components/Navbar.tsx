@@ -59,7 +59,7 @@ const Navbar = () => {
       <nav
         className={clsx(
           "fixed top-4 w-full z-50 flex justify-center transition-all duration-300",
-          isScrolled ? "bg-black backdrop-blur-xl shadow-md" : "bg-transparent"
+          isScrolled ? " shadow-md" : "bg-transparent"
         )}
       >
         <div className="w-full max-w-5xl px-6 pt-3">
