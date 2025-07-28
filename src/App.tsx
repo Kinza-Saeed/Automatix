@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,8 +13,6 @@ import BottomSection from "./components/BottomSection";
 import FaqSection from "./components/FaqSection";
 
 function App() {
-  const location = useLocation();
-
   useEffect(() => {
   AOS.init({
     duration: 1000,
@@ -23,8 +21,7 @@ function App() {
   });
 }, []);
   return (
-    <>
-    <div className="bg-black text-white" > 
+    <div className="bg-black text-white overflow-x-hidden w-full min-h-screen">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -32,8 +29,7 @@ function App() {
         <Route path="/terms" element={<><Terms /><BottomSection /></>} />
         <Route path="*" element={<><NotFound /><BottomSection /></>} />
       </Routes>
-      </div>
-    </>
+    </div>
   );
 }
 

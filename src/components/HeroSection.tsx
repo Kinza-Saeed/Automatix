@@ -24,14 +24,15 @@ export default function HeroSection() {
   return (
     <>
       <EnhancedSection
-        className="relative z-10 w-full max-w-7xl mx-auto 
+        className="relative z-10 w-full max-w-6xl mx-auto 
         px-4 pt-32 pb-8 
         sm:pt-40 sm:pb-16 
         md:pt-44 md:pb-20 
-        lg:pt-52 lg:pb-16"
+        lg:pt-52 lg:pb-16
+        overflow-x-hidden"
       >
        {/* Dotted Background with Gradient Fades */}
-<div className="absolute inset-0 z-0 pointer-events-none">
+<div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
   {/* Dotted Background */}
   <div
     className="
@@ -73,7 +74,7 @@ export default function HeroSection() {
 
     {/* Rounded Fade Below Navbar */}
     <div
-      className="absolute top-20 left-1/2 transform -translate-x-1/2 w-[80vw] h-24 
+      className="absolute top-20 left-1/2 transform -translate-x-1/2 w-[70vw] max-w-[600px] h-24 
         bg-[radial-gradient(ellipse_at_center,_#0e0e0e_40%,_transparent_100%)]
         blur-xl opacity-80 z-10 pointer-events-none"
     />
@@ -82,7 +83,7 @@ export default function HeroSection() {
 
         {/* Hero Content */}
         <div
-          className="relative z-10 text-center max-w-2xl sm:max-w-4xl w-full mx-auto flex flex-col items-center justify-center"
+          className="relative z-10 text-center max-w-2xl sm:max-w-3xl w-full mx-auto flex flex-col items-center justify-center px-2"
           data-aos="fade-up"
         >
           {/* Availability Badge */}
@@ -99,7 +100,7 @@ export default function HeroSection() {
 
           {/* Heading */}
           <h1
-            className="text-[2rem] xs:text-[2.3rem] sm:text-5xl md:text-6xl lg:text-9xl xl:text-7xl 
+            className="text-[2rem] xs:text-[2.3rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 
               font-medium leading-[1.05] font-satoshi 
               mt-1 sm:mt-4 md:mt-6"
             data-aos="fade-up"
@@ -116,7 +117,7 @@ export default function HeroSection() {
 
           {/* Subtext */}
           <p
-            className="text-sm xs:text-base sm:text-lg text-[#AFAFAF] mt-6 font-manrope px-2 sm:px-6 md:px-12 text-center"
+            className="text-sm xs:text-base sm:text-lg text-[#AFAFAF] mt-6 font-manrope px-2 sm:px-4 md:px-8 text-center"
             data-aos="fade-up"
             data-aos-delay="400"
           >

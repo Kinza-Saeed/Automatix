@@ -10,10 +10,22 @@ export default function BottomSection() {
     >
       <div className="relative z-10 max-w-6xl mx-auto bg-black rounded-3xl border border-gray-800 px-5 py-12 sm:px-8 sm:py-16 shadow-xl text-center">
         
-        {/* Dotted Background */}
-        <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-[radial-gradient(#e87811_1px,transparent_1px)] [background-size:10px_10px] opacity-20" />
-        </div>
+{/* Bottom Dotted Background */}
+<div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+  {/* White dots */}
+  <div className="absolute inset-0 bg-[radial-gradient(white_1.2px,transparent_1.2px)] [background-size:12px_12px] opacity-20 mix-blend-screen z-0" />
+
+  {/* Orange dots */}
+  <div className="absolute inset-0 bg-[radial-gradient(#e87811_1.2px,transparent_1.2px)] [background-size:12px_12px] opacity-20 mix-blend-screen z-0" />
+
+  {/* Left blur effect */}
+  <div className="absolute left-[-10%] top-[30%] w-[200px] h-[200px] bg-[#e87811] opacity-30 rounded-full blur-3xl z-0" />
+
+  {/* Right blur effect */}
+  <div className="absolute right-[-10%] bottom-[20%] w-[220px] h-[220px] bg-white opacity-20 rounded-full blur-3xl z-0" />
+</div>
+
+
 
         {/* Logo */}
         <div className="mb-6 text-orange-300 text-lg font-medium font-hero tracking-wide">

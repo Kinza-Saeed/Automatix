@@ -13,7 +13,6 @@ import BottomSection from "../components/BottomSection";
 const Home = () => {
   return (
     <>
-    <div className="bg-black text-white">
       <HeroSection />
       <WhyUs />
       <OurMission />
@@ -24,7 +23,6 @@ const Home = () => {
       <TeamSection />
       <FaqSection />
       <BottomSection />
-      </div>
     </>
   );
 };
