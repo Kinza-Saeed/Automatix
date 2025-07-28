@@ -177,9 +177,7 @@ html {
   animation: fade-in 0.8s ease-in-out;
 }
 
-.filter-orange {
-  filter: brightness(1.1) sepia(1) hue-rotate(-10deg) saturate(3);
-}
+
 
 @keyframes scroll-x {
   0% {

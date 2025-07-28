@@ -25,10 +25,6 @@ module.exports = {
         bodyLarge: ["18px", { lineHeight: "1.6" }],
       },
       keyframes: {
-        glow: {
-          "0%, 100%": { boxShadow: "0 0 8px 2px rgba(255,115,51,0.3)" },
-          "50%": { boxShadow: "0 0 12px 4px rgba(255,115,51,0.5)" },
-        },
         marquee: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },

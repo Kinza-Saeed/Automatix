@@ -32,25 +32,25 @@ export default function HeroSection() {
 >
 
       
-{/* Dotted Background - Only for Hero */}
+{/* Dotted Background */}
 <div className="absolute inset-0 z-0 pointer-events-none">
+  {/* Dotted Grid */}
   <div
     className="
-      pt-36                  // mobile top padding (below navbar)
-      sm:pt-48               // more top space for tablets
-      lg:pt-56               // even more top padding on desktop
-      h-[480px]
-      sm:h-[560px]
-      lg:h-[680px]           // taller dotted background for large screens
-      w-full
+      h-[600px] w-full
       bg-[radial-gradient(#e87811_1px,transparent_1px)]
       [background-size:10px_10px]
-      opacity-25
-      transition-all
-      duration-300
+      opacity-30
     "
   />
+
+  {/* Top Fade Gradient */}
+  <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#0B0B0B] to-transparent z-10" />
+
+  {/* Bottom Fade Gradient */}
+  <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#0B0B0B] to-transparent z-10" />
 </div>
+
 
  {/* Hero Content */}
         <div
@@ -70,26 +70,26 @@ export default function HeroSection() {
           </div>
 
           {/* Heading */}
-          <h1
+  <h1
   className="text-[2rem] xs:text-[2.3rem] sm:text-5xl md:text-6xl lg:text-9xl xl:text-7xl 
-    font-medium leading-tight font-satoshi 
-    space-y-3 
-    mt-2 sm:mt-4 md:mt-6"
+    font-medium leading-[1.05] font-satoshi 
+    mt-1 sm:mt-4 md:mt-6"
   data-aos="fade-up"
   data-aos-delay="200"
 >
-  <span className="text-[#E87811] block pt-2 sm:pt-4">Automation Agency</span>
-  <span className="text-white block mt-6 sm:mt-4">Beyond <span className="text-white">✦</span> Limits.</span>
-  <span className="text-[#E87811] block mt-6 sm:mt-4">Amplified With AI.</span>
+  <span className="text-[#E87811] block">Automation Agency</span>
+  <span className="text-white block mt-1 sm:mt-2">Beyond <span className="text-white">✦</span> Limits.</span>
+  <span className="text-[#E87811] block mt-1 sm:mt-2">Amplified With AI.</span>
 </h1>
 
 
-         <p
+
+   <p
   className="text-sm xs:text-base sm:text-lg text-[#AFAFAF] mt-6 font-manrope px-2 sm:px-6 md:px-12 text-center"
   data-aos="fade-up"
   data-aos-delay="400"
 >
-  Design services at your fingertips <br className="sm:hidden" />
+  Design services at your fingertips. <br className="sm:hidden" />
   Pause or cancel anytime.
 </p>
 
