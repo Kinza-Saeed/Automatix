@@ -72,10 +72,10 @@ export default function TestimonialsSection() {
           <div key={i} className="relative">
             <div className="text-center px-2 sm:px-4">
               <div className="text-gray-400 text-base sm:text-lg font-medium mb-1">{item.company}</div>
-              <div className="flex justify-center mb-2">
-                {Array(5).fill(0).map((_, i) => (
+            <div className="flex justify-center mb-2">
+              {Array(5).fill(0).map((_, i) => (
                   <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-400 fill-yellow-400" />
-                ))}
+              ))}
               </div>
               <p className="text-sm sm:text-base md:text-lg font-hero text-gray-400 mb-3 sm:mb-4">"{item.quote}"</p>
               <div className="font-hero text-white text-sm sm:text-base md:text-lg">{item.name}</div>
