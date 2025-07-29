@@ -1,25 +1,28 @@
 import { useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 
 const workItems = [
   {
     title: "Grapho AI",
     description:
-      "That’s Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
+      "That's Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
+    shortText: "47% increase in new customers",
     image: "/work1.jpeg",
   },
   {
     title: "VectraOps",
     description:
-      "That’s Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
+      "That's Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
+    shortText: "34% increase in online sales",
     image: "/work2.jpeg",
   },
   {
     title: "Signum",
     description:
-      "That’s Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
+      "That's Why We Leverage AI to Create Impactful, Lasting Experiences that Engage, and Transform Every Interaction.",
+    shortText: "47% increase in new customers",
     image: "/work3.jpeg",
   },
 ];
@@ -33,11 +36,11 @@ const stats = [
 
 export default function WorksSection() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [expanded, setExpanded] = useState<number | null>(null);
+  const [expandedItem, setExpandedItem] = useState<number>(0);
 
   const toggleExpand = (index: number) => {
-    setExpanded(prev => (prev === index ? null : index));
     setActiveIndex(index);
+    setExpandedItem(expandedItem === index ? -1 : index);
   };
 
   return (
@@ -82,26 +85,80 @@ export default function WorksSection() {
           />
         </div>
 
-        {/* Left - Text Options (below image for mobile) */}
+        {/* Left - Dropdown Text Options */}
         <div className="flex-1 order-2 lg:order-1 space-y-8">
           {workItems.map((item, index) => (
             <div
               key={index}
-              onClick={() => toggleExpand(index)}
               className={clsx(
-                "cursor-pointer border-l-4 pl-4 transition-all",
+                "border-l-4 pl-6 transition-all duration-300",
                 activeIndex === index
-                  ? "border-gray-400 hover:border-orange-500 text-white"
-                  : "border-transparent text-white hover:text-white"
+                  ? "border-orange-500"
+                  : "border-transparent"
               )}
             >
-              <h3 className="text-2xl sm:text-3xl font-hero font-medium mb-1">{item.title}</h3>
-              <p className="text-base sm:text-lg leading-relaxed text-gray-400 pt-3 pb-5">
-                {expanded === index
-                  ? item.description
-                  : item.description.split(".")[0] + "."}
-              </p>
-              <div className="w-full h-px bg-gray-800 mx-auto mb-2" />
+              {/* Clickable Header with Short Text */}
+              <div
+                onClick={() => toggleExpand(index)}
+                className="cursor-pointer group"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-hero font-medium text-white group-hover:text-orange-400 transition-colors duration-300">
+                        {item.title}
+                      </h3>
+                      <AnimatePresence>
+                        {expandedItem !== index && (
+                          <motion.p
+                            initial={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.95 }}
+                            transition={{ 
+                              duration: 0.4, 
+                              ease: [0.4, 0.0, 0.2, 1]
+                            }}
+                            className="text-sm sm:text-base text-gray-400 leading-relaxed ml-4 flex-shrink-0"
+                          >
+                            {item.shortText}
+                          </motion.p>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                  <motion.div
+                    animate={{ rotate: expandedItem === index ? 180 : 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="text-orange-500 text-xl sm:text-2xl ml-4"
+                  >
+                    
+                  </motion.div>
+                </div>
+              </div>
+
+              {/* Dropdown Content */}
+              <AnimatePresence>
+                {expandedItem === index && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0, y: -5 }}
+                    animate={{ opacity: 1, height: "auto", y: 0 }}
+                    exit={{ opacity: 0, height: 0, y: -5 }}
+                    transition={{ 
+                      duration: 0.6, 
+                      ease: [0.4, 0.0, 0.2, 1],
+                      opacity: { duration: 0.4 },
+                      height: { duration: 0.6 }
+                    }}
+                    className="overflow-hidden"
+                  >
+                    <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-400 pt-2 pb-4">
+                      {item.description}
+                    </p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Separator Line */}
+              <div className="w-full h-px bg-gray-800 mx-auto mt-6" />
             </div>
           ))}
         </div>
