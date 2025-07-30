@@ -75,10 +75,10 @@ const ServicesSection = () => {
         <span className="inline-block px-4 py-1 mb-5 rounded-full bg-white/10 text-sm font-medium tracking-wide">
           Our Services
         </span>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl mt-4 font-hero font-medium">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl mt-4 font-hero font-medium" data-aos="fade-up" data-aos-delay="200">
           Expertise That Drives Quality
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto font-hero pt-5">
+        <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto font-hero pt-5" data-aos="fade-up" data-aos-delay="200" >
           With deep expertise, we deliver quality solutions that drive <br className="hidden sm:block" />
           success and exceed industry standards consistently.
         </p>
@@ -94,7 +94,7 @@ const ServicesSection = () => {
       </div>
 
       {/* Main Service Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mb-16 relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mb-16 relative z-10" data-aos="fade-up" data-aos-delay="200">
         {[1, 2, 3].map((_, idx) => (
           <motion.div
             key={idx}
@@ -128,7 +128,7 @@ const ServicesSection = () => {
 
     {/* Mini Service Cards */}
 <motion.div
-  className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 pt-10 relative z-10"
+  className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 pt-10 relative z-10" data-aos="fade-up" data-aos-delay="200"
   initial="hidden"
   whileInView="visible"
   viewport={{ once: true }}

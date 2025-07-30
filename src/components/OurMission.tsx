@@ -26,10 +26,15 @@ const OurMission = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-3xl sm:text-4xl md:text-6xl font-medium leading-snug sm:leading-tight font-hero text-white"
+          className="text-3xl sm:text-4xl md:text-6xl font-medium leading-snug sm:leading-tight transition font-hero text-white"
+          data-aos="fade-up"
+          data-aos-anchor="#mission"
+          data-aos-delay="200"
+          data-aos-duration="1200"
         >
           We Drive <span className="text-orange-500">Businesses</span> <br />
-          To The <span className="text-orange-600">Forefront</span> Of The Industries <br />
+          To The <span className="text-orange-600">Forefront</span> Of The
+          Industries <br />
           Through Comprehensive <br />
           <span className="text-orange-500">AI Automation.</span>
         </motion.h2>
@@ -39,10 +44,15 @@ const OurMission = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-sm sm:text-lg text-gray-400 max-w-3xl mx-auto font-hero"
+          className="text-sm sm:text-lg text-gray-400 max-w-3xl mx-auto transition font-hero"
+          data-aos="fade-up"
+          data-aos-anchor="#mission"
+          data-aos-delay="200"
+          data-aos-duration="1200"
         >
           First impressions matter. That’s why our mission is to create clean,
-          enduring designs that elevate. First impressions matter. That’s why our mission.
+          enduring designs that elevate. First impressions matter. That’s why
+          our mission.
         </motion.p>
 
         {/* Book a Call Button */}
@@ -52,7 +62,10 @@ const OurMission = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex justify-center"
         >
-          <button className="inline-flex items-center gap-2 bg-black text-orange-400 px-6 py-3 rounded-full font-medium text-sm sm:text-base md:text-lg transition hover:bg-white hover:text-black">
+          <button
+            className="inline-flex items-center gap-2 bg-black text-orange-400 px-6 py-3 rounded-full font-medium text-sm sm:text-base md:text-lg transition hover:bg-white hover:text-black"
+            data-aos="fade-up"
+          >
             Book a Call
             <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen px-4 sm:px-6 py-12 sm:py-16 md:py-24 bg-black text-white pt-32 sm:pt-36 md:pt-24" data-aos="fade-up">
+    <div className="min-h-screen px-4 sm:px-6 py-12 sm:py-16 md:py-24 bg-black text-white pt-32 sm:pt-36 md:pt-24" data-aos="fade-up" data-aos-delay="200">
       <div className="max-w-5xl mx-auto text-center space-y-4 sm:space-y-6 pt-6 sm:pt-10">
         {/* Pill */}
         <div className="inline-block px-3 sm:px-4 py-1 mb-2 sm:mb-5 rounded-full bg-white/10 text-xs sm:text-sm font-medium tracking-wide">
@@ -11,15 +11,15 @@ const Contact = () => {
         </div>
 
         {/* Heading & Paragraph */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-hero pt-1 sm:pt-3 leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-hero pt-1 sm:pt-3 leading-tight" data-aos="fade-up" data-aos-delay="200">
           We're Here To Help
         </h1>
-        <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto pt-2 sm:pt-3 pb-4 sm:pb-5 px-2">
+        <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto pt-2 sm:pt-3 pb-4 sm:pb-5 px-2" data-aos="fade-up" data-aos-delay="200">
           Our team is ready to support you with expert advice & solutions.
         </p>
 
         {/* Form */}
-        <div className="container mx-auto max-w-5xl bg-[#1a1a1a] p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl shadow-lg relative overflow-hidden">
+        <div className="container mx-auto max-w-5xl bg-[#1a1a1a] p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl shadow-lg relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
           {/* Random White Effect */}
           <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-white/10 to-transparent rounded-full blur-3xl transform -translate-x-16 -translate-y-16"></div>
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-white/8 to-transparent rounded-full blur-2xl transform -translate-x-12 translate-y-12"></div>
@@ -106,7 +106,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-left text-sm text-white border-t border-gray-700 pt-8 sm:pt-10">
+        <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-left text-sm text-white border-t border-gray-700 pt-8 sm:pt-10" data-aos="fade-up" data-aos-delay="200">
           <div className="flex flex-col gap-2 pb-4 md:pb-0 md:pr-4 md:border-r md:border-gray-700 text-center md:text-left">
             <h4 className="text-base sm:text-lg font-semibold flex items-center justify-center md:justify-start gap-2 mb-1">
               <FaMapMarkerAlt /> Head Office

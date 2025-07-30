@@ -65,6 +65,7 @@ export default function WorksSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-3xl sm:text-4xl md:text-6xl font-medium leading-tight font-hero text-white pb-5"
+          data-aos="fade-up" data-aos-delay="200"
         >
           Recent Works, Notable Impact
         </motion.h2>
@@ -86,7 +87,7 @@ export default function WorksSection() {
         </div>
 
         {/* Left - Dropdown Text Options */}
-        <div className="flex-1 order-2 lg:order-1 space-y-8">
+        <div className="flex-1 order-2 lg:order-1 space-y-8" data-aos="fade-up" data-aos-delay="200">
           {workItems.map((item, index) => (
             <div
               key={index}

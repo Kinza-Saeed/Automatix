@@ -60,17 +60,17 @@ const termsData = [
 
 const Terms = () => {
   return (
-    <div className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-20 font-inter" data-aos="fade-up">
+    <div className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-20 font-inter" data-aos="fade-up" data-aos-delay="200">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-5xl mx-auto"
       >
-        <h1 className="text-[72px] leading-[1.2] font-medium font-hero mb-8 text-7xl md:text-7xl  text-center text-white mt-20 pt-32">
+        <h1 className="text-[72px] leading-[1.2] font-medium font-hero mb-8 text-7xl md:text-7xl  text-center text-white mt-20 pt-32" data-aos="fade-up" data-aos-delay="200">
           Term & Conditions
         </h1>
-        <p className="text-[18px] leading-[1.6]  text-center text-lg text-gray-400 mb-12 pb-5">
+        <p className="text-[18px] leading-[1.6]  text-center text-lg text-gray-400 mb-12 pb-5" data-aos="fade-up" data-aos-delay="200">
           Welcome to Automatix! These terms and conditions outline the rules <br />
           and regulations for the use of our website and services.
         </p>
@@ -83,7 +83,7 @@ const Terms = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="bg-black p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border border-black"
+              className="bg-black p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border border-black" data-aos="fade-up" data-aos-delay="200"
             >
               <h2 className="text-[24px] leading-[1.3] text-xl  font-semibold text-white mb-2">
                 {item.title}
@@ -95,7 +95,7 @@ const Terms = () => {
           ))}
         </div>
 
-        <div className="mt-9 text-[18px] leading-[1.6] text-lg text-white border-t border-black ">
+        <div className="mt-9 text-[18px] leading-[1.6] text-lg text-white border-t border-black " data-aos="fade-up" data-aos-delay="200">
           By using Automatix services, you acknowledge that you have read,
           understood, and agree to be bound by<br/> these Terms and Conditions.
         </div>

@@ -14,16 +14,16 @@ const PricingSection = () => {
         <div className="inline-block px-4 py-1 mb-4 rounded-full bg-white/10 text-sm font-medium tracking-wide text-white">
           Simple Pricing
         </div>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium font-hero text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium font-hero text-white" data-aos="fade-up">
           Transparent Pricing Plans
         </h2>
-        <p className="text-gray-400 text-base sm:text-lg mt-5">
+        <p className="text-gray-400 text-base sm:text-lg mt-5" data-aos="fade-up">
           We offer adaptable pricing solutions for businesses of any sizes.
           </p>
       </div>
 
       {/* Pricing Cards */}
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 justify-center items-stretch max-w-6xl mx-auto">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 justify-center items-stretch max-w-6xl mx-auto" data-aos="fade-up, zoom-in">
         {/* Standard Plan */}
         <div
           className="bg-[#1a1a1a] border border-[#2d2d2d] rounded-2xl p-6 sm:p-8 w-full shadow-md flex flex-col justify-between transition duration-300 hover:shadow-orange-500/20"

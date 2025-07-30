@@ -42,12 +42,12 @@ export default function FaqSection() {
         <span className="inline-block px-4 py-1 mb-5 rounded-full bg-white/10 text-sm font-medium tracking-wide text-white">
           Need to Know
         </span>
-        <h2 className="text-4xl font-medium font-hero text-white">
+        <h2 className="text-4xl font-medium font-hero text-white" data-aos="fade-up" data-aos-delay="200">
           Frequently Asked Questions
         </h2>
       </div>
 
-      <div className="space-y-6 max-w-3xl mx-auto">
+      <div className="space-y-6 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
         {faqs.map((item, index) => (
           <div
             key={index}

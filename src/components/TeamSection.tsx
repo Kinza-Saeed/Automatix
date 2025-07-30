@@ -52,12 +52,12 @@ const cardVariants = {
 
 export default function TeamSection() {
   return (
-    <section className="w-full bg-black text-white py-20 px-6 md:px-10 lg:px-20">
+    <section className="w-full bg-black text-white py-20 px-6 md:px-10 lg:px-20" data-aos="fade-up" data-aos-delay="200">
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-1 mb-5 rounded-full bg-white/10 text-sm shadow-white font-medium tracking-wide text-white">
           Our Creative Minds
         </span>
-        <h2 className="text-6xl text-white font-hero font-medium">
+        <h2 className="text-6xl text-white font-hero font-medium" data-aos="fade-up" data-aos-delay="200"> 
           The People Behind the Magic
         </h2>
       </div>

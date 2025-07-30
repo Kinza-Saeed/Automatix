@@ -80,18 +80,18 @@ export default function WhyUs() {
           Why Us
         </div>
 
-        <h2 className="text-xl sm:text-3xl md:text-5xl font-satoshi font-medium text-white mb-3 sm:mb-4 leading-tight">
+        <h2 className="text-xl sm:text-3xl md:text-5xl font-satoshi font-medium text-white mb-3 sm:mb-4 leading-tight" data-aos="fade-up" data-aos-delay="200">
           Experience the Benefits <br />
           of Our Expertise
         </h2>
 
-        <p className="text-sm sm:text-lg md:text-xl font-manrope text-white/60 max-w-2xl mx-auto px-2">
+        <p className="text-sm sm:text-lg md:text-xl font-manrope text-white/60 max-w-2xl mx-auto px-2" data-aos="fade-up" data-aos-delay="200">
           That drives impactful gain powerful results
         </p>
       </motion.div>
 
       {/* Feature Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-10 mb-8 sm:mb-14 md:mb-20 w-full max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-10 mb-8 sm:mb-14 md:mb-20 w-full max-w-6xl" data-aos=" zoom-in" data-aos-delay="200">
         {cards.map(({ title, desc, img }, index) => (
           <motion.div
             key={index}
@@ -128,7 +128,7 @@ export default function WhyUs() {
       >
         <a
           href="#pricing"
-          className="inline-flex items-center gap-2 text-white text-sm sm:text-base md:text-lg font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl border border-orange-400 bg-gradient-to-br from-orange-400 to-orange-600 hover:scale-105 transition-transform duration-300"
+          className="inline-flex items-center gap-2 text-white text-sm sm:text-base md:text-lg font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl border border-orange-400 bg-gradient-to-br from-orange-400 to-orange-600 hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200"
         >
           See Pricing
           <svg

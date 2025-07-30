@@ -13,13 +13,13 @@ export default function TestimonialsSection() {
         <div className="inline-block px-3 py-1 mb-3 sm:mb-4 rounded-full bg-white/10 text-xs sm:text-sm font-medium tracking-wide text-white">
           What Our Users Say
         </div>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-hero text-white pt-2 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium font-hero text-white pt-2 leading-tight" data-aos="fade-up" data-aos-delay="200" >
           Trusted by Businesses Like Yours
         </h2>
       </div>
 
       {/* Main Testimonial */}
-      <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-10 mb-12 sm:mb-16 md:mb-20 text-center md:text-left">
+      <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-10 mb-12 sm:mb-16 md:mb-20 text-center md:text-left" data-aos="fade-up" data-aos-delay="200">
         <img
           src="/zapfast.jpeg"
           alt="Zapfast"
@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
       </div>
 
       {/* Sub Testimonials */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10" data-aos="fade-up" data-aos-delay="200">
         {/* Testimonial Item */}
         {[{
           company: "Creative Edge",

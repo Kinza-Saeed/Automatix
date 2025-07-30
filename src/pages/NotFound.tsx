@@ -53,13 +53,13 @@ const NotFound = () => {
     <div className="min-h-screen bg-black text-white flex flex-col relative overflow-hidden" data-aos="fade-up">
       <main className="flex flex-col items-center justify-center flex-1 text-center px-4 sm:px-6 z-10 pt-16 sm:pt-20 md:pt-24">
         {/* Heading */}
-        <h2 className="text-lg sm:text-xl md:text-2xl leading-[1.3] font-semibold text-white/70 mb-2 mt-4 sm:mt-20">
+        <h2 className="text-lg sm:text-xl md:text-2xl leading-[1.3] font-semibold text-white/70 mb-2 mt-4 sm:mt-20" data-aos="fade-up" data-aos-delay="200">
           Page not found
         </h2>
-        <h1 className="text-6xl sm:text-8xl md:text-[120px] lg:text-[206px] leading-[0.8] font-bold text-white/50 mb-4 pt-2 sm:pt-10">
+        <h1 className="text-6xl sm:text-8xl md:text-[120px] lg:text-[206px] leading-[0.8] font-bold text-white/50 mb-4 pt-2 sm:pt-10" data-aos="fade-up" data-aos-delay="200">
           404
         </h1>
-        <p className="text-sm sm:text-base md:text-lg leading-[1.6] text-white/70 mb-6 sm:mb-8 max-w-md px-4">
+        <p className="text-sm sm:text-base md:text-lg leading-[1.6] text-white/70 mb-6 sm:mb-8 max-w-md px-4" data-aos="fade-up" data-aos-delay="200">
           We can't find the page you're looking for.
         </p>
 
@@ -112,6 +112,7 @@ const NotFound = () => {
         <Link
           to="/"
           className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-full bg-orange-500 text-black font-semibold hover:bg-orange-600 transition mt-4 sm:mt-4 z-20 text-sm sm:text-base"
+          data-aos="fade-up" data-aos-delay="200"
         >
           Back to Home
           <ArrowUpRight size={18} className="sm:w-5 sm:h-5" />

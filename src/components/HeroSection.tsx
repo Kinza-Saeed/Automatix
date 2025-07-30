@@ -31,60 +31,63 @@ export default function HeroSection() {
         lg:pt-52 lg:pb-16
         overflow-x-hidden"
       >
-       {/* Dotted Background with Gradient Fades */}
+ {/* Enhanced Hero Background with Extended Dots and Full Side Blurs */}
 <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-  {/* Dotted Background */}
+  {/* Dotted Background Section */}
   <div
     className="
       relative
       pt-36
       sm:pt-48
       lg:pt-56
-      h-[480px]
-      sm:h-[560px]
-      lg:h-[680px]
-      w-full
-      opacity-30
+      h-[100%]
+      w-[120vw]
+      left-1/2 -translate-x-1/2
+      opacity-25
       transition-all
       duration-300
       overflow-hidden
     "
   >
-    {/* White Dots Layer */}
-    <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:10px_10px] mix-blend-screen" />
-    
-    {/* Orange Dots Layer */}
-    <div className="absolute inset-0 bg-[radial-gradient(#e87811_1px,transparent_1px)] [background-size:10px_10px] mix-blend-screen opacity-80" />
+    {/* White Dots */}
+    <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:9px_9px] opacity-70 mix-blend-screen" />
 
-    {/* Top Fades */}
+
+    {/* Orange Dots */}
+    <div className="absolute inset-0 bg-[radial-gradient(#e87811_1.2px,transparent_1.2px)] [background-size:9px_9px] mix-blend-screen opacity-70" />
+
+    {/* Top Gradient Fades */}
     <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10" />
     <div className="absolute top-0 left-1/4 w-1/6 h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-60" />
     <div className="absolute top-0 left-1/2 w-1/5 h-40 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-70" />
     <div className="absolute top-0 right-1/6 w-1/6 h-24 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10 opacity-50" />
 
-    {/* Bottom Fades */}
-    <div className="absolute bottom-0 left-0 w-full h-52 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10" />
-    <div className="absolute bottom-0 left-[15%] w-1/6 h-40 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-60" />
-    <div className="absolute bottom-0 left-1/2 w-1/4 h-48 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-80" />
-    <div className="absolute bottom-0 right-[10%] w-1/6 h-32 bg-gradient-to-t from-[#0e0e0e] to-transparent z-10 opacity-50" />
+    {/* Bottom Gradient Fades (Black) */}
+    <div className="absolute bottom-0 left-0 w-full h-52 bg-gradient-to-t from-black to-transparent z-10" />
+    <div className="absolute bottom-0 left-[15%] w-1/6 h-40 bg-gradient-to-t from-black to-transparent z-10 opacity-60" />
+    <div className="absolute bottom-0 left-1/2 w-1/4 h-48 bg-gradient-to-t from-black to-transparent z-10 opacity-80" />
+    <div className="absolute bottom-0 right-[10%] w-1/6 h-32 bg-gradient-to-t from-black to-transparent z-10 opacity-50" />
 
-    {/* Side Fades */}
-    <div className="absolute top-0 left-0 h-full w-36 bg-gradient-to-r from-[#0e0e0e] to-transparent z-10" />
-    <div className="absolute top-0 right-0 h-full w-36 bg-gradient-to-l from-[#0e0e0e] to-transparent z-10" />
-
-    {/* Rounded Fade Below Navbar */}
-    <div
-      className="absolute top-20 left-1/2 transform -translate-x-1/2 w-[70vw] max-w-[600px] h-24 
-        bg-[radial-gradient(ellipse_at_center,_#0e0e0e_40%,_transparent_100%)]
-        blur-xl opacity-80 z-10 pointer-events-none"
-    />
+    {/* Center Radial Fade Below Navbar */}
+    <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-[70vw] max-w-[600px] h-24 bg-[radial-gradient(ellipse_at_center,_#0e0e0e_40%,_transparent_100%)] blur-xl opacity-80 z-10 pointer-events-none" />
   </div>
+
+  {/* Full Left White Side Effect */}
+  <div className="absolute left-0 top-0 h-full w-[40%] bg-white opacity-5 blur-2xl z-0" />
+
+  {/* Full Right Orange Side Effect */}
+  <div className="absolute right-0 top-0 h-full w-[40%] bg-[#e87811] opacity-5 blur-2xl z-0" />
+
+  {/* Black Gradient Blurs - Left & Right */}
+  <div className="absolute top-0 left-0 h-full w-36 bg-gradient-to-r from-black to-transparent z-10" />
+  <div className="absolute top-0 right-0 h-full w-36 bg-gradient-to-l from-black to-transparent z-10" />
 </div>
+
 
         {/* Hero Content */}
         <div
           className="relative z-10 text-center max-w-2xl sm:max-w-3xl w-full mx-auto flex flex-col items-center justify-center px-2"
-          data-aos="fade-up"
+          data-aos="fade-up" data-aos-delay="200"
         >
           {/* Availability Badge */}
           <div
