@@ -19,7 +19,7 @@ export default function BottomSection() {
           <div className="absolute inset-0 bg-[radial-gradient(white_1px,transparent_1px)] [background-size:9px_9px] opacity-10 mix-blend-screen rounded-3xl" />
 
           {/* Orange Dots */}
-          <div className="absolute inset-0 bg-[radial-gradient(#e87811_1px,transparent_1px)] [background-size:9px_9px] opacity-15 mix-blend-screen rounded-3xl" />
+          <div className="absolute inset-0 bg-[radial-gradient(#e87811_1px,transparent_1px)] [background-size:9px_9px] opacity-30 mix-blend-screen rounded-3xl" />
 
           {/* Centered White Blur on Right Side */}
           <div className="absolute right-[5%] top-1/2 transform -translate-y-1/2 h-[80%] w-[20%] bg-white opacity-5 blur-2xl z-0 rounded-full" />

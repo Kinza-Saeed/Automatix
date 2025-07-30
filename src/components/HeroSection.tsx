@@ -54,7 +54,7 @@ export default function HeroSection() {
 
 
     {/* Orange Dots */}
-    <div className="absolute inset-0 bg-[radial-gradient(#e87811_1.2px,transparent_1.2px)] [background-size:9px_9px] mix-blend-screen opacity-70" />
+    <div className="absolute inset-0 bg-[radial-gradient(#e87811_1.2px,transparent_1.2px)] [background-size:9px_9px] mix-blend-screen opacity-80" />
 
     {/* Top Gradient Fades */}
     <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#0e0e0e] to-transparent z-10" />
